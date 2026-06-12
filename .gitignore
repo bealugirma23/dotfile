@@ -7,6 +7,9 @@
 /.pnpm-store
 .keentools
 
+/github-copilot
+
+
 /nvim.bak1
 /nvim_latest.bak
 /nvim.bak3
