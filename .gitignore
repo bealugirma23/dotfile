@@ -10,6 +10,11 @@
 /github-copilot
 
 
+/cagent
+/tmux/plugins/*
+
+/raycast
+
 /nvim.bak1
 /nvim_latest.bak
 /nvim.bak3
