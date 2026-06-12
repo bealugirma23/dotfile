@@ -1,0 +1,10 @@
+name: koko
+root: /Users/mac/Workspace/projects/work/betting_platform/koko_full
+
+windows:
+  - main:
+      layout: main-vertical
+      main-pane-width: 80%
+      panes:
+        - fish -c "nvim ."
+        - clear

@@ -1,0 +1,18 @@
+/node_modules
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+/.pnpm-store
+.keentools
+
+/nvim.bak1
+/nvim_latest.bak
+/nvim.bak3
+/nvim.bak-not
+/flutter
+/flipper
+/nvim.bak-default
+
+

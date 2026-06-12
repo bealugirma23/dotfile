@@ -1,0 +1,10 @@
+name: portfolio
+root: /Users/mac/Workspace/projects/personal/portfilio
+
+windows:
+  - editor:
+      panes:
+        - nvim .
+  - dev:
+      panes:
+        - clear

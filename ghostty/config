@@ -1,0 +1,30 @@
+# Keep your existing visual baseline.
+theme = Adwaita
+
+# Better behavior for a fish + tmux + nvim workflow.
+shell-integration = fish
+shell-integration-features = cursor,sudo,ssh-env
+
+# Restore tabs/splits/working dirs across restarts on macOS.
+window-save-state = always
+window-step-resize = true
+window-new-tab-position = current
+
+# Clipboard/mouse behavior that stays out of the way while coding.
+copy-on-select = clipboard
+clipboard-paste-protection = true
+mouse-hide-while-typing = true
+
+# Use left Option as Alt for terminal apps while keeping right Option
+# available for normal macOS character input.
+macos-option-as-alt = left
+
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
+# theme = Adwaita
+theme = Carbonfox
+background-opacity = 0.75
+background-blur-radius = 40
+cursor-color = #40cc3e

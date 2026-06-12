@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "obsidian": {
+      "type": "remote",
+      "enabled": true,
+      "url": "http://127.0.0.1:27123/mcp/",
+      "headers": {
+        "Authorization": "Bearer b91ff19c76769d6113e6ae22e0997f99f0172fdbada7da62d24fd2bb7cf9046a"
+      }
+    },
+    "figma-mcp-go": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@vkhanhqui/figma-mcp-go@latest"
+      ]
+    }
+  },
+  "plugin": [
+    "opencode-antigravity-auth@latest"
+  ]
+}

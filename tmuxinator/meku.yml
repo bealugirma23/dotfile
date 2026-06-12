@@ -1,0 +1,10 @@
+name: meku
+root: /Users/mac/Workspace/projects/work/meku_platform/mekuacademy
+
+windows:
+  - editor:
+      panes:
+        - nvim .
+  - dev:
+      panes:
+        - clear

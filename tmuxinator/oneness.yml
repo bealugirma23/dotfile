@@ -1,0 +1,10 @@
+name: oneness
+root: /Users/mac/Workspace/projects/work/oneness_platform
+
+windows:
+  - editor:
+      panes:
+        - nvim .
+  - dev:
+      panes:
+        - clear
