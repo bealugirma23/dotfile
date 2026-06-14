@@ -14,4 +14,11 @@ vim.keymap.set("n", "<leader>tq", "<cmd>FlutterQuit<cr>", { desc = "Flutter Quit
 
 --- Godot dev keymaps
 
--- vim.keymap.set("n", "<leader>gdn", "<cmd>FlutterQuit<cr>", { desc = "Flutter Quit" })
+-- Restart Godot debug session (quit current, restart fresh)
+vim.keymap.set("n", "<leader>dR", function()
+  -- Kill any running Godot game instance
+  vim.fn.system("pkill -f 'godot --path'")
+  vim.defer_fn(function()
+    vim.cmd("GodotRunProject")
+  end, 1000)
+end, { desc = "Restart Godot Game" })
