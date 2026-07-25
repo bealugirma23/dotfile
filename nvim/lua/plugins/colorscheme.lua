@@ -17,7 +17,7 @@ end
 
 return {
   {
-    "gruvbox-community/gruvbox",
+    "craftzdog/solarized-osaka.nvim",
     lazy = false,
     priority = 1000,
     init = function()
@@ -32,6 +32,7 @@ return {
   { "ray-x/aurora", lazy = true },
   { "EdenEast/nightfox.nvim", lazy = true },
   { "liuchengxu/space-vim-dark", lazy = true },
+  { "gruvbox-community/gruvbox", lazy = true },
   {
     "folke/tokyonight.nvim",
     lazy = true,
@@ -46,7 +47,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "solarized-osaka",
     },
   },
 }

@@ -39,3 +39,9 @@ alias llt="eza -1 --icons --tree --git-ignore"
 
 # Added by Antigravity CLI installer
 set -gx PATH "/Users/mac/.local/bin" $PATH
+# Android ENV
+set -gx ANDROID_HOME $HOME/Library/Android/sdk
+set -l bt_dir (ls -1d $ANDROID_HOME/build-tools/* 2>/dev/null | tail -n 1)
+if test -n "$bt_dir"
+    set -gx PATH $PATH $bt_dir
+end

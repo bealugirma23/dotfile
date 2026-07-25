@@ -15,6 +15,9 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
     },
-    opts = {},
+    opts = {
+      --@type lc.lang
+      lang = "python3",
+    },
   },
 }

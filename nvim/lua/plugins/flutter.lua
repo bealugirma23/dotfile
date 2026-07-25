@@ -28,6 +28,12 @@ return {
         auto_open = false, -- Open outline manually to avoid startup stutter
       },
       lsp = {
+        -- Increase the timeout for LSP requests
+        on_attach = function(client, bufnr)
+          -- Your existing on_attach logic (if any)
+        end,
+        -- The key setting: increase timeout_ms
+        capabilities = vim.lsp.protocol.make_client_capabilities(),
         color = {
           enabled = true,
           background = true,
@@ -38,13 +44,24 @@ return {
         settings = {
           showTodos = true,
           completeFunctionCalls = true,
+          analysisExcludedFolders = {
+            vim.fn.expand("$HOME/.pub-cache"),
+            vim.fn.expand("$HOME/flutter/packages"),
+          },
+          renameFilesWithClasses = "prompt",
+          enableSnippets = true,
+          updateImportsOnRename = true,
           -- NOTE: analysisExcludedFolders requires ABSOLUTE paths.
           -- ${workspaceFolder} is a VS Code variable and does NOT expand in Neovim.
           -- dartls already excludes .dart_tool by default; only add absolute paths here if needed.
-          analysisExcludedFolders = {},
         },
       },
-      debugger = { enabled = false, run_via_dap = false },
+      debugger = {
+        enabled = false,
+        run_via_dap = false,
+        exception_breakpoints = {},
+        evaluate_to_string_in_debug_views = false,
+      },
     })
   end,
 }

@@ -1,0 +1,14 @@
+{
+  "config_version": 2,
+  "users": [
+    {
+      "id": "40998643",
+      "email": "gbealu8@gmail.com",
+      "auth_mode": "read-write",
+      "auth_scope": "data:read_write,data:delete,project:delete"
+    }
+  ],
+  "user": {
+    "defaultUser": "40998643"
+  }
+}

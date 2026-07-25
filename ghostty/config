@@ -1,5 +1,5 @@
 # Keep your existing visual baseline.
-theme = Adwaita
+# theme = Adwaita
 
 # Better behavior for a fish + tmux + nvim workflow.
 shell-integration = fish
@@ -24,7 +24,15 @@ macos-option-as-alt = left
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 # theme = Adwaita
-theme = Carbonfox
-background-opacity = 0.75
-background-blur-radius = 40
+# theme = Carbonfox
+theme = Solarized Dark Patched
+font-family = "PlemolJP Console NF"
+
+background-opacity = 0.9
+background-blur-radius = 20
+background = #031219
+
+# cursor
+cursor-style = block
+cursor-style-blink = true
 cursor-color = #40cc3e

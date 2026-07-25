@@ -32,6 +32,7 @@ Prefix key: `` ` `` (backtick)
 - `prefix + s`: choose session
 - `prefix + S`: create or attach named session
 - `prefix + o`: open a shell popup in the current pane path
+- `prefix + O`: close the popup
 - `prefix + y`: copy current tmux buffer to macOS clipboard
 - `prefix + r`: reload config
 
