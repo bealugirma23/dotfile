@@ -25,12 +25,19 @@ macos-option-as-alt = left
 # resize-overlay-duration = 4s 200ms
 # theme = Adwaita
 # theme = Carbonfox
-theme = Solarized Dark Patched
-font-family = "PlemolJP Console NF"
 
+
+# the backgrounds work also with the theme
+theme = Solarized Dark Patched
 background-opacity = 0.9
 background-blur-radius = 20
 background = #031219
+
+# ghostty light theme
+# theme = Gruvbox Light
+
+
+font-family = "PlemolJP Console NF"
 
 # cursor
 cursor-style = block

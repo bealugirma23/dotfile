@@ -8,7 +8,7 @@
 ## What This Setup Optimizes For
 
 - Ghostty friendly terminal behavior: truecolor, clipboard, extended keys
-- Neovim workflow: vim keybindings, `vim-tmux-navigator`, popup `lazygit`
+- Neovim workflow: vim keybindings, `vim-tmux-navigator`, popup `opencode`
 - Session persistence: `resurrect` + `continuum`
 - Better copy flow: OSC52 plus macOS clipboard support
 - Current-path splits and new windows so project context stays intact
@@ -31,8 +31,8 @@ Prefix key: `` ` `` (backtick)
 - `prefix + z`: session/window/pane tree
 - `prefix + s`: choose session
 - `prefix + S`: create or attach named session
-- `prefix + o`: open a shell popup in the current pane path
-- `prefix + O`: close the popup
+- `Alt+o`: toggle a 75%×75% popup shell
+- `Alt+t`: toggle a 90%×90% opencode popup
 - `prefix + y`: copy current tmux buffer to macOS clipboard
 - `prefix + r`: reload config
 
@@ -44,6 +44,7 @@ Prefix key: `` ` `` (backtick)
 - `tmux-yank`
 - `tmux-resurrect`
 - `tmux-continuum`
+- `loichyan/tmux-toggle-popup`
 
 ## Suggested Neovim Side
 

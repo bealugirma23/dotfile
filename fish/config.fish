@@ -12,6 +12,8 @@ fish_add_path ~/.pub-cache/bin
 fish_add_path ~/.local/bin
 fish_add_path ~/.cargo/bin
 fish_add_path /opt/homebrew/Cellar/raylib/5.5/include/
+fish_add_path /opt/homebrew/bin
+
 
 # pnpm
 set -gx PNPM_HOME /Users/mac/Library/pnpm
@@ -45,3 +47,6 @@ set -l bt_dir (ls -1d $ANDROID_HOME/build-tools/* 2>/dev/null | tail -n 1)
 if test -n "$bt_dir"
     set -gx PATH $PATH $bt_dir
 end
+
+# kimi-code
+fish_add_path -g "/Users/mac/.kimi-code/bin"
