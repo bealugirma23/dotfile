@@ -25,17 +25,13 @@ end
 # Added by Antigravity
 fish_add_path /Users/mac/.antigravity/antigravity/bin
 
-# Added by Antigravity
-fish_add_path /Users/mac/.antigravity/antigravity/bin
-
-# Added by Antigravity
-fish_add_path /Users/mac/.antigravity/antigravity/bin
-
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 # Aliases
+alias ls="eza --icons"
+alias la="eza -a --icons"
 alias ll="eza -l -g --icons --git"
 alias llt="eza -1 --icons --tree --git-ignore"
 

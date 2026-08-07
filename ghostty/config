@@ -43,3 +43,5 @@ font-family = "PlemolJP Console NF"
 cursor-style = block
 cursor-style-blink = true
 cursor-color = #40cc3e
+
+keybind = cmd+g=text:\x1bg
