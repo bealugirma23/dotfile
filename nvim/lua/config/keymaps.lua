@@ -11,6 +11,8 @@ vim.keymap.set("n", "<leader>th", "<cmd>FlutterHotReload<cr>", { desc = "Flutter
 vim.keymap.set("n", "<leader>tH", "<cmd>FlutterHotRestart<cr>", { desc = "Flutter Hot Restart" })
 vim.keymap.set("n", "<leader>tt", "<cmd>TransparentToggle<cr>", { desc = "Toggle Transparency" })
 vim.keymap.set("n", "<leader>tq", "<cmd>FlutterQuit<cr>", { desc = "Flutter Quit" })
+-- create a todo
+vim.keymap.set("i", "<C-d>", "[] -", { desc = "Insert markdown checkbox" })
 
 --- Godot dev keymaps
 
