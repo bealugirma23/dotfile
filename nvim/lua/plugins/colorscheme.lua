@@ -28,6 +28,18 @@ return {
   },
   { "catppuccin/nvim", lazy = true },
   { "rebelot/kanagawa.nvim", lazy = true },
+  { "wtfox/luna.nvim", lazy = false },
+  {
+    "Aejkatappaja/cendre",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("cendre").setup({
+        background = "hard", -- "hard" | "medium" | "soft"
+        italic_virtual_text = false,
+      })
+    end,
+  },
   { "elvessousa/sobrio", lazy = true },
   { "ray-x/aurora", lazy = true },
   { "EdenEast/nightfox.nvim", lazy = true },
@@ -47,7 +59,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "solarized-osaka",
+      -- colorscheme = "solarized-osaka",
+      colorscheme = "cendre",
     },
   },
 }
